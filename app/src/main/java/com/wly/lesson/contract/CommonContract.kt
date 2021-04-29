@@ -1,4 +1,4 @@
-package com.wly.baselib.kotlin.contract
+package com.wly.lesson.contract
 
 import com.wly.baselib.kotlin.IBasePresenter
 import com.wly.baselib.kotlin.IModel
