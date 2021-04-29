@@ -1,1 +1,1 @@
-include ':app', ':easyEventBus'
+include ':app', ':easyEventBus','baseLib'

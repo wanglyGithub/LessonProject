@@ -1,0 +1,15 @@
+ext {
+
+    android = [
+            compileSdkVersion: 26,
+            applicationId    : "com.wly.lesson",
+            minSdkVersion    : 18,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+    dependencies = [
+            "appcompat-v7"          : 'com.android.support:appcompat-v7:27.1.1',
+
+    ]
+}

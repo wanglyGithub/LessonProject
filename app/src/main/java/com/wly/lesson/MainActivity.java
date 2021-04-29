@@ -1,7 +1,6 @@
 package com.wly.lesson;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.wly.baselib.base.BaseActivity;

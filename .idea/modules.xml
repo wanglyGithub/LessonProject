@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Lesson.iml" filepath="$PROJECT_DIR$/Lesson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LessonProject.iml" filepath="$PROJECT_DIR$/LessonProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/easyEventBus/easyeventbus.iml" filepath="$PROJECT_DIR$/easyEventBus/easyeventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseLib/baseLib.iml" filepath="$PROJECT_DIR$/baseLib/baseLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easyEventBus/easyEventBus.iml" filepath="$PROJECT_DIR$/easyEventBus/easyEventBus.iml" />
     </modules>
   </component>
 </project>
