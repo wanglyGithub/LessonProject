@@ -1,20 +1,20 @@
 package com.wly.lesson.contract
 
-import com.wly.baselib.kotlin.IBasePresenter
-import com.wly.baselib.kotlin.IModel
-import com.wly.baselib.kotlin.IView
+import com.wly.baselib.presenter.IBasePresenter
+import com.wly.baselib.model.IModel
+import com.wly.baselib.base.impl.IView
 
 interface CommonContract {
 
-    interface View:IView{
+    interface View: IView {
 
     }
 
-    interface Presenter<V:View>:IBasePresenter<V>{
+    interface Presenter<V:View>: IBasePresenter<V> {
 
     }
 
-    interface Model:IModel{
+    interface Model: IModel {
 
     }
 }
