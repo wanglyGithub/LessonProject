@@ -1,11 +1,13 @@
-package com.wly.baselib.kotlin
+package com.wly.baselib.presenter
 
 import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.LifecycleOwner
+import com.wly.baselib.model.IModel
+import com.wly.baselib.base.impl.IView
 
 abstract class BasePresenter<V : IView, M : IModel> : IBasePresenter<V> {
-    private var mModel: M? = null
-    private var mView: V? = null
+    protected var mModel: M? = null
+    protected var mView: V? = null
 
 
     val isViewDestroy: Boolean

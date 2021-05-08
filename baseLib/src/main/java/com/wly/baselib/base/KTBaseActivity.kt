@@ -1,25 +1,22 @@
 package com.wly.baselib.base
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import com.wly.baselib.kotlin.IBasePresenter
-import com.wly.baselib.kotlin.IView
+import com.wly.baselib.base.impl.IView
+import com.wly.baselib.presenter.IBasePresenter
 
-abstract class KTBaseActivity<P : IBasePresenter<V>, V : IView> : AppCompatActivity(), IView {
+abstract class KTBaseActivity<P : IBasePresenter<V>, V : IView> : AbsBaseActivity(), IView {
 
-    protected var mPresenter: P? = null
+    var mPresenter: P? = null
 
     protected abstract fun initPresenter(): P
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        initView()
-    }
-
-    fun initView() {
+    override fun initView() {
         mPresenter = initPresenter()
         mPresenter?.onAttachView(this as V)
+    }
+
+    fun getPresenter(): P? {
+        return mPresenter
     }
 
 

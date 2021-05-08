@@ -1,4 +1,4 @@
-package com.wly.baselib.kotlin
+package com.wly.baselib.model
 
 import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleObserver
