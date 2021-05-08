@@ -4,11 +4,18 @@ import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.LifecycleOwner
 import com.wly.baselib.model.IModel
 import com.wly.baselib.base.impl.IView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
 
 abstract class BasePresenter<V : IView, M : IModel> : IBasePresenter<V> {
     protected var mModel: M? = null
     protected var mView: V? = null
 
+    protected val presenterScope: CoroutineScope by lazy {
+        CoroutineScope(Dispatchers.Main + Job())
+    }
 
     val isViewDestroy: Boolean
         get() = mView == null
@@ -33,6 +40,7 @@ abstract class BasePresenter<V : IView, M : IModel> : IBasePresenter<V> {
 
     override fun onDestroy(owner: LifecycleOwner) {
         owner.lifecycle.removeObserver(this)
+        presenterScope.cancel()
         onDetachView()
     }
 }
