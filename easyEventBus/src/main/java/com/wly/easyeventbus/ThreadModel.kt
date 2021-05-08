@@ -1,11 +1,11 @@
-package com.wly.easyeventbus;
+package com.wly.easyeventbus
 
 /**
  * author: wangliyun
  * date: 2020/5/26
  * description:
  */
-public enum ThreadModel {
+enum class ThreadModel {
     /**
      * Subscriber will be called in the same thread, which is posting the event. This is the default. Event delivery
      * implies the least overhead because it avoids thread switching completely. Thus this is the recommended mode for
