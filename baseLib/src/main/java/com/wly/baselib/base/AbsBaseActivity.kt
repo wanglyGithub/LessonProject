@@ -1,13 +1,18 @@
 package com.wly.baselib.base
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 abstract class AbsBaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initView()
+        layoutResId()?.let {
+            setContentView(it)
+            initView()
+        }
     }
+
+    abstract fun layoutResId(): Int?
 
     abstract fun initView()
 

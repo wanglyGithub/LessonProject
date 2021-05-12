@@ -1,9 +1,10 @@
 package com.wly.baselib.presenter
 
-import android.arch.lifecycle.LifecycleObserver
-import android.arch.lifecycle.LifecycleOwner
+import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.LifecycleOwner
 import com.wly.baselib.model.IModel
 import com.wly.baselib.base.impl.IView
+import com.wly.baselib.utils.UILogUtil
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -39,6 +40,7 @@ abstract class BasePresenter<V : IView, M : IModel> : IBasePresenter<V> {
     }
 
     override fun onDestroy(owner: LifecycleOwner) {
+        UILogUtil.d(message = "BasePresenter onDestroy()")
         owner.lifecycle.removeObserver(this)
         presenterScope.cancel()
         onDetachView()
