@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/baseLib/baseLib.iml" filepath="$PROJECT_DIR$/baseLib/baseLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/easyEventBus/easyEventBus.iml" filepath="$PROJECT_DIR$/easyEventBus/easyEventBus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlinLib/kotlinLib.iml" filepath="$PROJECT_DIR$/kotlinLib/kotlinLib.iml" />
     </modules>
   </component>
 </project>

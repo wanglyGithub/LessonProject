@@ -1,1 +1,1 @@
-include ':app', ':easyEventBus','baseLib'
+include ':app', ':easyEventBus', ':kotlinLib','baseLib'
