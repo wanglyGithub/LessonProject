@@ -6,7 +6,7 @@ import com.wly.baselib.BuildConfig
 
 /**
  * @Description: UIBase日志打印工具类
- * @Author: wangliyun
+ * @Author: wanglyGithub
  * @CreateDate: 2020/9/2 14:15
  * @Version: 2.0
  */
