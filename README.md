@@ -6,11 +6,14 @@
 ## 更新
 项目主要更新点如下：
 
-1. Kotlin
-    - [x] Kotlin+MVP 完成
-    2. Retrofit+MVP+协程  —— 更新中
-    - [x] DSL简单学习
-    4. Kotlin 设计模式
+# Kotlin
+ - [x] DSL简单学习  ✔️
+ - [x] Kotlin+MVP  ✔️
+ - [ ] Kotlin 设计模式
+    -  单例模式   ✔️
+    -  工厂模式   更新中
+- [ ]  Kotlin+MVP+协程  —— 更新中，下周完成
+
     
 
 
