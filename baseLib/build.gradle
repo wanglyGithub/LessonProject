@@ -35,13 +35,18 @@ dependencies {
 
     api rootProject.ext.dependencies["appcompat"]
     api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha03")
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
-    implementation rootProject.ext.dependencies["coroutines-core"]
+    api rootProject.ext.dependencies["coroutines-core"]
+    api rootProject.ext.dependencies["coroutines-android"]
     api rootProject.ext.dependencies["retrofit"]
     api rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
     api rootProject.ext.dependencies["refresh-layout"]
     api rootProject.ext.dependencies["refresh-header"]
     api rootProject.ext.dependencies["refresh-footer"]
+    api rootProject.ext.dependencies["retrofit-url-manager"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+    api rootProject.ext.dependencies["converter-gson"]
 }
