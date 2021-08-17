@@ -8,10 +8,10 @@ import java.io.Serializable
  * description:
  */
 open class BaseResponse<T>(
-    open val data: T? = null,
+    val data: T? = null,
     open val errorCode: Int = 0, // 200||0
     open val errorMsg: String = "",
-    open val error: Throwable? = null
+    val error: Throwable? = null
 ) : Serializable {
     val isSuccess: Boolean
         get() = errorCode == 0
