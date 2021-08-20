@@ -1,4 +1,4 @@
-package com.wly.baselib.mvvm.base
+package com.wly.baselib.mvvm.rep
 
 import com.wly.baselib.net.bean.*
 import com.wly.baselib.net.exception.handleApiException

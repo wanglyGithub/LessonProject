@@ -6,13 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 abstract class AbsBaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        layoutResId()?.let {
-            setContentView(it)
+        if (layoutResId() !=0){
+            setContentView(layoutResId())
             initView()
         }
     }
 
-    abstract fun layoutResId(): Int?
+    abstract fun layoutResId(): Int
 
     abstract fun initView()
 
